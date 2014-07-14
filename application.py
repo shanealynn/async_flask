@@ -12,7 +12,7 @@ from flask import Flask, render_template, url_for, copy_current_request_context
 from random import random
 from time import sleep
 from threading import Thread, Event
-import flask
+
 
 __author__ = 'slynn'
 
@@ -42,7 +42,7 @@ class RandomThread(Thread):
         while not thread_stop_event.isSet():
             number = round(random()*10, 3)
             print number
-            socketio.emit('my response', {'number': number}, namespace='/test')
+            socketio.emit('newnumber', {'number': number}, namespace='/test')
             sleep(self.delay)
 
     def run(self):
@@ -53,16 +53,6 @@ class RandomThread(Thread):
 def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('index.html')
-
-@socketio.on('my event', namespace='/test')
-def test_message(message):
-    print('Emit Message Received')
-    emit('my response', {'data': message['data']})
-
-@socketio.on('my broadcast event', namespace='/test')
-def test_message(message):
-    print('Broadcast message received')
-    emit('my response', {'data': message['data']}, broadcast=True)
 
 @socketio.on('connect', namespace='/test')
 def test_connect():

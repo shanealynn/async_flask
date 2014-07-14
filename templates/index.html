@@ -4,26 +4,19 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
     <script src="static/js/application.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
-<div id="header">
+<div class="jumbotron">
     <h1>Test Asynchronous Flask Communication</h1>
 </div>
 
-<h2>Emit Form:</h2>
-<form id="emit">
-    Emit input: <input type="text" name="emit_data" id="emit_data"><br>
-    <input type="submit" value="submit">
-</form>
-<h2>Broadcast Form:</h2>
-<form id="broadcast">
-    Broadcast input: <input type="text" name="braodcast_data" id="broadcast_data"><br>
-    <input type="submit" value="submit">
-</form>
-
-<div id="content">
-    <p>I want some comms to start appearing here:</p>
-    <div class="async"></div>
+<div class="container" id="content">
+    <div class="row">
+        <p>I want some comms to start appearing here:</p>
+        <div class="async"></div>
+    </div>
 </div>
 <div id="log">
 
