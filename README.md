@@ -10,3 +10,7 @@ This repository is a sample flask application that updates a webpage using a bac
 It is based on the very useful Flask-SocketIO code from Miguel Grinberg.
 
 https://github.com/miguelgrinberg/Flask-SocketIO
+
+To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv.
+Start the application with:
+python application.py
