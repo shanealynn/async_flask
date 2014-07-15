@@ -6,13 +6,17 @@ $(document).ready(function(){
 
     //receive details from server
     socket.on('newnumber', function(msg) {
-        console.log("Received number" + msg)
+        console.log("Received number" + msg.number);
         //maintain a list of ten numbers
         if (numbers_received.length >= 10){
             numbers_received.shift()
         }            
-        numbers_received.push(msg.number)
-        $('#log').html('<p>Current Numbers: ' + numbers_received.toString() + '</p>');
+        numbers_received.push(msg.number);
+        numbers_string = '';
+        for (var i = 0; i < numbers_received.length; i++){
+            numbers_string = numbers_string + '<p>' + numbers_received[i].toString() + '</p>';
+        }
+        $('#log').html('<h3>Current Numbers: </h3>' + numbers_string);
     });
 
 });
