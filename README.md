@@ -13,13 +13,13 @@ https://github.com/miguelgrinberg/Flask-SocketIO
 
 To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv. You can achieve this with:
 
-<code>
-git clone https://github.com/shanealynn/async_flask
-cd async_flask
-virtualenv flaskiotest
-./flaskiotest/Scripts/activate
-pip install -r requirements.txt  #(or in Windows - sometimes python -m pip install -r requirements.txt )
-</code>
+
+    git clone https://github.com/shanealynn/async_flask
+    cd async_flask
+    virtualenv flaskiotest
+    ./flaskiotest/Scripts/activate
+    pip install -r requirements.txt  #(or in Windows - sometimes python -m pip install -r requirements.txt )
+
 
 
 Start the application with:
