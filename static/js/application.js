@@ -16,7 +16,7 @@ $(document).ready(function(){
         for (var i = 0; i < numbers_received.length; i++){
             numbers_string = numbers_string + '<p>' + numbers_received[i].toString() + '</p>';
         }
-        $('#log').html('<h3>Current Numbers: </h3>' + numbers_string);
+        $('#log').html(numbers_string);
     });
 
 });
