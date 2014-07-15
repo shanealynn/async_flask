@@ -11,9 +11,21 @@ It is based on the very useful Flask-SocketIO code from Miguel Grinberg.
 
 https://github.com/miguelgrinberg/Flask-SocketIO
 
-To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv.
+To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv. You can achieve this with:
+
+<code>
+git clone https://github.com/shanealynn/async_flask
+cd async_flask
+virtualenv flaskiotest
+./flaskiotest/Scripts/activate
+pip install -r requirements.txt  #(or in Windows - sometimes python -m pip install -r requirements.txt )
+</code>
+
+
 Start the application with:
 
 <code>
 python application.py
 </code>
+
+And visit http://localhost:5000 to see the updating numbers.
