@@ -13,4 +13,7 @@ https://github.com/miguelgrinberg/Flask-SocketIO
 
 To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv.
 Start the application with:
+
+<code>
 python application.py
+</code>
