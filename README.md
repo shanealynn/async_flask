@@ -1,8 +1,5 @@
-async_flask
 
-Shane Lynn 15/07/2014
-
-Updated to Python 3: 19th-May-2018
+# Async Flask Test
 
 ===========
 
@@ -18,10 +15,12 @@ To use - please clone the repository and then set up your virtual environment us
 
     git clone https://github.com/shanealynn/async_flask
     cd async_flask
-    virtualenv flaskiotest
-    ./flaskiotest/Scripts/activate
+    # Create a virtual environment
+    python3.9 -m venv venv
+    # Activate that virtual environment
+    source venv/bin/activate
+    # Install the project requirements.
     pip install -r requirements.txt  #(or in Windows - sometimes python -m pip install -r requirements.txt )
-
 
 
 Start the application with:
@@ -31,3 +30,12 @@ python application.py
 </code>
 
 And visit http://localhost:5000 to see the updating numbers.
+
+## ChangeLog
+
+15-Jul-2014: Initial Version
+19-May-2018: Update to Python3.3
+10-Apr-2022: 
+ - Update to Python3.9 
+ - fixes for threading.isAlive() -> threading.is_alive()
+ - Update socketIO version on Frontend
