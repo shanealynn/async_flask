@@ -40,7 +40,7 @@ thread_stop_event = Event()
 
 def randomNumberGenerator():
     """
-    Generate a random number every 1 second and emit to a socketio instance (broadcast)
+    Generate a random number every 2 seconds and emit to a socketio instance (broadcast)
     Ideally to be run in a separate thread?
     """
     #infinite loop of magical random numbers
