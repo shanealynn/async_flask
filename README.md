@@ -12,6 +12,8 @@ https://github.com/miguelgrinberg/Flask-SocketIO
 
 To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv. You can achieve this with:
 
+This project has been tested with Python 3.9.
+
 
     git clone https://github.com/shanealynn/async_flask
     cd async_flask
@@ -34,7 +36,9 @@ And visit http://localhost:5000 to see the updating numbers.
 ## ChangeLog
 
 15-Jul-2014: Initial Version
+
 19-May-2018: Update to Python3.3
+
 10-Apr-2022: 
  - Update to Python3.9 
  - fixes for threading.isAlive() -> threading.is_alive()
